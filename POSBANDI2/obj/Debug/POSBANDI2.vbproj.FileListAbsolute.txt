@@ -60,3 +60,6 @@ D:\Program\Desktop\POSBANDI2\POSBANDI2\bin\Debug\CrystalDecisions.ReportAppServe
 D:\Program\Desktop\POSBANDI2\POSBANDI2\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 D:\Program\Desktop\POSBANDI2\POSBANDI2\bin\Debug\stdole.dll
 D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.cetakpetugas.resources
+D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.FormSesiLayanan.resources
+D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.ManajemenJadwal.resources
+D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.layananprint.resources

@@ -13,7 +13,7 @@ Public Class Manajemenpetugas
     ''' '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 
-    Private Sub TabPage1_Click(sender As Object, e As EventArgs) Handles TabPage1.Click
+    Private Sub TabPage1_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -117,11 +117,11 @@ Public Class Manajemenpetugas
         Return True ' Semua validasi lolos
     End Function
 
-    Private Sub btnbaru_Click(sender As Object, e As EventArgs) Handles btnbaru.Click
+    Private Sub btnbaru_Click(sender As Object, e As EventArgs)
         KondisiAwal()
     End Sub
 
-    Private Sub btnsimpan_Click(sender As Object, e As EventArgs) Handles btnsimpan.Click
+    Private Sub btnsimpan_Click(sender As Object, e As EventArgs)
         If Not ValidasiInput() Then Return
 
         Try
@@ -156,7 +156,7 @@ Public Class Manajemenpetugas
 
     End Sub
 
-    Private Sub btnupdate_Click(sender As Object, e As EventArgs) Handles btnupdate.Click
+    Private Sub btnupdate_Click(sender As Object, e As EventArgs)
         If Not ValidasiInput() Then Return
 
         Try
@@ -186,7 +186,7 @@ Public Class Manajemenpetugas
         End Try
     End Sub
 
-    Private Sub btnhapus_Click(sender As Object, e As EventArgs) Handles btnhapus.Click
+    Private Sub btnhapus_Click(sender As Object, e As EventArgs)
         If String.IsNullOrEmpty(kdptgs.Text) Then Return
         If MessageBox.Show("Apakah Anda yakin ingin menghapus data " & kdptgs.Text & " (" & tbnama.Text & ")?", "Konfirmasi Hapus", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
             Try
@@ -207,14 +207,14 @@ Public Class Manajemenpetugas
         End If
     End Sub
 
-    Private Sub tbtlp_TKeyPress(sender As Object, e As KeyPressEventArgs) Handles tbtlp.KeyPress
+    Private Sub tbtlp_TKeyPress(sender As Object, e As KeyPressEventArgs)
         ' Hanya izinkan angka (digit) dan tombol kontrol (seperti Backspace)
         If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
             e.Handled = True ' Tolak input karakter
         End If
     End Sub
 
-    Private Sub dgvpetugas_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvpetugas.CellContentClick
+    Private Sub dgvpetugas_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
         If e.RowIndex >= 0 Then
             Dim row As DataGridViewRow = dgvpetugas.Rows(e.RowIndex)
 
@@ -241,11 +241,11 @@ Public Class Manajemenpetugas
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnsmpn.Click, btnhps.Click, btbaru.Click, btnupdt.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs)
         Dim petugas1 As New cetakpetugas()
         Me.Hide()
         petugas1.Show()
@@ -255,9 +255,12 @@ Public Class Manajemenpetugas
     ''' '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
     '''TAB 2
     ''' '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-    Private Sub TabPage3_Click(sender As Object, e As EventArgs) Handles TabPage3.Click
+    Private Sub TabPage3_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-
+    Private Sub Button1_Click_2(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Hide()
+        cetakpetugas.Show()
+    End Sub
 End Class

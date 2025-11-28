@@ -14,6 +14,21 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>x64</PlatformTarget>
@@ -135,6 +150,24 @@
     <Compile Include="cetakpetugas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormSesiLayanan.Designer.vb">
+      <DependentUpon>FormSesiLayanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSesiLayanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="layananprint.Designer.vb">
+      <DependentUpon>layananprint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="layananprint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManajemenJadwal.Designer.vb">
+      <DependentUpon>ManajemenJadwal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManajemenJadwal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Manajemenpetugas.Designer.vb">
       <DependentUpon>Manajemenpetugas.vb</DependentUpon>
     </Compile>
@@ -146,6 +179,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -163,10 +197,25 @@
       <DependentUpon>petugas.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="sesibantuan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sesibantuan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="cetakpetugas.resx">
       <DependentUpon>cetakpetugas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSesiLayanan.resx">
+      <DependentUpon>FormSesiLayanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="layananprint.resx">
+      <DependentUpon>layananprint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManajemenJadwal.resx">
+      <DependentUpon>ManajemenJadwal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manajemenpetugas.resx">
       <DependentUpon>Manajemenpetugas.vb</DependentUpon>
@@ -180,6 +229,10 @@
     <EmbeddedResource Include="petugas.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>petugas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sesibantuan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>sesibantuan.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -197,6 +250,18 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
