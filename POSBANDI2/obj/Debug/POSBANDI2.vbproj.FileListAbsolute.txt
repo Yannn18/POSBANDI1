@@ -63,3 +63,8 @@ D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.cetakpetugas.resource
 D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.FormSesiLayanan.resources
 D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.ManajemenJadwal.resources
 D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.layananprint.resources
+D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.LandingPage.resources
+D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.MenuKetuaRTRW.resources
+D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.loginKetuaRTRW.resources
+D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.loginPetugas.resources
+D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.pilihanLogin.resources
