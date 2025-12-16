@@ -43,15 +43,17 @@ Partial Class Manajemenpetugas
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.dgvpetugas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(34, 382)
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(720, 271)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(164, 39)
+        Me.Button1.Size = New System.Drawing.Size(92, 23)
         Me.Button1.TabIndex = 34
         Me.Button1.Text = "PRINT"
         Me.Button1.UseVisualStyleBackColor = True
@@ -59,7 +61,7 @@ Partial Class Manajemenpetugas
         'rbnonaktif
         '
         Me.rbnonaktif.AutoSize = True
-        Me.rbnonaktif.Location = New System.Drawing.Point(558, 124)
+        Me.rbnonaktif.Location = New System.Drawing.Point(703, 191)
         Me.rbnonaktif.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rbnonaktif.Name = "rbnonaktif"
         Me.rbnonaktif.Size = New System.Drawing.Size(81, 20)
@@ -71,7 +73,7 @@ Partial Class Manajemenpetugas
         'rbaktif
         '
         Me.rbaktif.AutoSize = True
-        Me.rbaktif.Location = New System.Drawing.Point(491, 123)
+        Me.rbaktif.Location = New System.Drawing.Point(636, 190)
         Me.rbaktif.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rbaktif.Name = "rbaktif"
         Me.rbaktif.Size = New System.Drawing.Size(53, 20)
@@ -82,7 +84,7 @@ Partial Class Manajemenpetugas
         '
         'btnhapus
         '
-        Me.btnhapus.Location = New System.Drawing.Point(632, 163)
+        Me.btnhapus.Location = New System.Drawing.Point(620, 271)
         Me.btnhapus.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnhapus.Name = "btnhapus"
         Me.btnhapus.Size = New System.Drawing.Size(94, 23)
@@ -92,7 +94,7 @@ Partial Class Manajemenpetugas
         '
         'btnupdate
         '
-        Me.btnupdate.Location = New System.Drawing.Point(532, 163)
+        Me.btnupdate.Location = New System.Drawing.Point(520, 271)
         Me.btnupdate.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnupdate.Name = "btnupdate"
         Me.btnupdate.Size = New System.Drawing.Size(94, 23)
@@ -102,7 +104,7 @@ Partial Class Manajemenpetugas
         '
         'btnbaru
         '
-        Me.btnbaru.Location = New System.Drawing.Point(332, 163)
+        Me.btnbaru.Location = New System.Drawing.Point(320, 271)
         Me.btnbaru.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnbaru.Name = "btnbaru"
         Me.btnbaru.Size = New System.Drawing.Size(94, 23)
@@ -112,7 +114,7 @@ Partial Class Manajemenpetugas
         '
         'btnsimpan
         '
-        Me.btnsimpan.Location = New System.Drawing.Point(432, 163)
+        Me.btnsimpan.Location = New System.Drawing.Point(420, 271)
         Me.btnsimpan.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnsimpan.Name = "btnsimpan"
         Me.btnsimpan.Size = New System.Drawing.Size(94, 23)
@@ -122,7 +124,7 @@ Partial Class Manajemenpetugas
         '
         'tbdate
         '
-        Me.tbdate.Location = New System.Drawing.Point(491, 77)
+        Me.tbdate.Location = New System.Drawing.Point(690, 148)
         Me.tbdate.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tbdate.Name = "tbdate"
         Me.tbdate.Size = New System.Drawing.Size(203, 22)
@@ -131,15 +133,15 @@ Partial Class Manajemenpetugas
         'dgvpetugas
         '
         Me.dgvpetugas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvpetugas.Location = New System.Drawing.Point(31, 193)
+        Me.dgvpetugas.Location = New System.Drawing.Point(182, 314)
         Me.dgvpetugas.Name = "dgvpetugas"
         Me.dgvpetugas.RowHeadersWidth = 51
-        Me.dgvpetugas.Size = New System.Drawing.Size(734, 175)
+        Me.dgvpetugas.Size = New System.Drawing.Size(734, 282)
         Me.dgvpetugas.TabIndex = 26
         '
         'kdptgs
         '
-        Me.kdptgs.Location = New System.Drawing.Point(491, 39)
+        Me.kdptgs.Location = New System.Drawing.Point(690, 102)
         Me.kdptgs.Name = "kdptgs"
         Me.kdptgs.ReadOnly = True
         Me.kdptgs.Size = New System.Drawing.Size(203, 22)
@@ -147,28 +149,28 @@ Partial Class Manajemenpetugas
         '
         'tbusia
         '
-        Me.tbusia.Location = New System.Drawing.Point(141, 70)
+        Me.tbusia.Location = New System.Drawing.Point(303, 137)
         Me.tbusia.Name = "tbusia"
         Me.tbusia.Size = New System.Drawing.Size(199, 22)
         Me.tbusia.TabIndex = 24
         '
         'tbtlp
         '
-        Me.tbtlp.Location = New System.Drawing.Point(141, 109)
+        Me.tbtlp.Location = New System.Drawing.Point(303, 170)
         Me.tbtlp.Name = "tbtlp"
         Me.tbtlp.Size = New System.Drawing.Size(199, 22)
         Me.tbtlp.TabIndex = 23
         '
         'tbalmt
         '
-        Me.tbalmt.Location = New System.Drawing.Point(141, 143)
+        Me.tbalmt.Location = New System.Drawing.Point(303, 207)
         Me.tbalmt.Name = "tbalmt"
         Me.tbalmt.Size = New System.Drawing.Size(199, 22)
         Me.tbalmt.TabIndex = 22
         '
         'tbnama
         '
-        Me.tbnama.Location = New System.Drawing.Point(141, 39)
+        Me.tbnama.Location = New System.Drawing.Point(303, 102)
         Me.tbnama.Name = "tbnama"
         Me.tbnama.Size = New System.Drawing.Size(199, 22)
         Me.tbnama.TabIndex = 21
@@ -176,7 +178,7 @@ Partial Class Manajemenpetugas
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(386, 41)
+        Me.Label4.Location = New System.Drawing.Point(571, 102)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(92, 16)
         Me.Label4.TabIndex = 20
@@ -185,7 +187,7 @@ Partial Class Manajemenpetugas
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(436, 124)
+        Me.Label2.Location = New System.Drawing.Point(581, 191)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(44, 16)
         Me.Label2.TabIndex = 19
@@ -194,7 +196,7 @@ Partial Class Manajemenpetugas
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(98, 72)
+        Me.Label7.Location = New System.Drawing.Point(179, 137)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(35, 16)
         Me.Label7.TabIndex = 18
@@ -203,7 +205,7 @@ Partial Class Manajemenpetugas
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(73, 111)
+        Me.Label6.Location = New System.Drawing.Point(179, 170)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(58, 16)
         Me.Label6.TabIndex = 15
@@ -212,7 +214,7 @@ Partial Class Manajemenpetugas
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(402, 81)
+        Me.Label3.Location = New System.Drawing.Point(571, 148)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(76, 16)
         Me.Label3.TabIndex = 17
@@ -221,7 +223,7 @@ Partial Class Manajemenpetugas
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(78, 146)
+        Me.Label5.Location = New System.Drawing.Point(179, 207)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(49, 16)
         Me.Label5.TabIndex = 16
@@ -230,17 +232,39 @@ Partial Class Manajemenpetugas
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(31, 43)
+        Me.Label1.Location = New System.Drawing.Point(179, 105)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(97, 16)
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "Nama Petugas"
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(928, 628)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(87, 25)
+        Me.Button3.TabIndex = 35
+        Me.Button3.Text = "Kembali"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Franklin Gothic Heavy", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(430, 30)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(233, 29)
+        Me.Label8.TabIndex = 36
+        Me.Label8.Text = "Manajemen Petugas"
+        '
         'Manajemenpetugas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(797, 461)
+        Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.ClientSize = New System.Drawing.Size(1052, 665)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.rbnonaktif)
         Me.Controls.Add(Me.rbaktif)
@@ -263,7 +287,8 @@ Partial Class Manajemenpetugas
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Manajemenpetugas"
-        Me.Text = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Manajemen Petugas"
         CType(Me.dgvpetugas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -294,4 +319,6 @@ Partial Class Manajemenpetugas
     Friend WithEvents Label3 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Label8 As Label
 End Class

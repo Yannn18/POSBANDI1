@@ -121,6 +121,7 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -150,22 +151,46 @@
     <Compile Include="cetakpetugas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formlaporan.Designer.vb">
+      <DependentUpon>Formlaporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formlaporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LandingPage.Designer.vb">
       <DependentUpon>LandingPage.vb</DependentUpon>
     </Compile>
     <Compile Include="LandingPage.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loginKetuaRTRW.Designer.vb">
-      <DependentUpon>loginKetuaRTRW.vb</DependentUpon>
+    <Compile Include="laporan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laporan.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
-    <Compile Include="loginKetuaRTRW.vb">
+    <Compile Include="laporanbaru.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laporanbaru.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="menulogin.Designer.vb">
+      <DependentUpon>menulogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menulogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loginPetugas.Designer.vb">
-      <DependentUpon>loginPetugas.vb</DependentUpon>
+    <Compile Include="regisPetugas.Designer.vb">
+      <DependentUpon>regisPetugas.vb</DependentUpon>
     </Compile>
-    <Compile Include="loginPetugas.vb">
+    <Compile Include="regisPetugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masyarakat.Designer.vb">
+      <DependentUpon>Masyarakat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Masyarakat.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuKetuaRTRW.Designer.vb">
@@ -174,10 +199,10 @@
     <Compile Include="MenuKetuaRTRW.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSesiLayanan.Designer.vb">
-      <DependentUpon>FormSesiLayanan.vb</DependentUpon>
+    <Compile Include="Catatktivitas.Designer.vb">
+      <DependentUpon>Catatktivitas.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormSesiLayanan.vb">
+    <Compile Include="Catatktivitas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="layananprint.Designer.vb">
@@ -199,6 +224,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="mainconnect.vb" />
+    <Compile Include="menupetugas.Designer.vb">
+      <DependentUpon>menupetugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menupetugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -233,25 +264,45 @@
       <DependentUpon>sesibantuan.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="fromcetaklaporan.Designer.vb">
+      <DependentUpon>fromcetaklaporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fromcetaklaporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="cetakpetugas.resx">
       <DependentUpon>cetakpetugas.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlaporan.resx">
+      <DependentUpon>Formlaporan.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LandingPage.resx">
       <DependentUpon>LandingPage.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loginKetuaRTRW.resx">
-      <DependentUpon>loginKetuaRTRW.vb</DependentUpon>
+    <EmbeddedResource Include="laporan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laporan.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="loginPetugas.resx">
-      <DependentUpon>loginPetugas.vb</DependentUpon>
+    <EmbeddedResource Include="laporanbaru.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laporanbaru.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menulogin.resx">
+      <DependentUpon>menulogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regisPetugas.resx">
+      <DependentUpon>regisPetugas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masyarakat.resx">
+      <DependentUpon>Masyarakat.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuKetuaRTRW.resx">
       <DependentUpon>MenuKetuaRTRW.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSesiLayanan.resx">
-      <DependentUpon>FormSesiLayanan.vb</DependentUpon>
+    <EmbeddedResource Include="Catatktivitas.resx">
+      <DependentUpon>Catatktivitas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="layananprint.resx">
       <DependentUpon>layananprint.vb</DependentUpon>
@@ -261,6 +312,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manajemenpetugas.resx">
       <DependentUpon>Manajemenpetugas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menupetugas.resx">
+      <DependentUpon>menupetugas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -278,6 +332,9 @@
     <EmbeddedResource Include="sesibantuan.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>sesibantuan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fromcetaklaporan.resx">
+      <DependentUpon>fromcetaklaporan.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

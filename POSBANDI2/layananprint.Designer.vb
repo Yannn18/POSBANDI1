@@ -24,6 +24,7 @@ Partial Class layananprint
     Private Sub InitializeComponent()
         Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.sesibantuan1 = New POSBANDI2.sesibantuan()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'CrystalReportViewer1
@@ -38,11 +39,21 @@ Partial Class layananprint
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(882, 450)
         Me.CrystalReportViewer1.TabIndex = 0
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(618, 12)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Kembali"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'layananprint
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(882, 450)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Name = "layananprint"
         Me.Text = "layananprint"
@@ -52,4 +63,5 @@ Partial Class layananprint
 
     Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
     Friend WithEvents sesibantuan1 As sesibantuan
+    Friend WithEvents Button1 As Button
 End Class

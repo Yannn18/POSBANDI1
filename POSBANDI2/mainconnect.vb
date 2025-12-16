@@ -9,6 +9,8 @@ Module mainconnect
     Public ds As DataSet
     Public rd As MySqlDataReader
 
+
+
     Public Sub connected()
 
         Try

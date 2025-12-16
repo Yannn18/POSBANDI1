@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class FormSesiLayanan
+Public Class Catatktivitas
 
     Dim currentKodeSesi As String = ""
     Dim waktuMulai As DateTime
@@ -149,7 +149,7 @@ Public Class FormSesiLayanan
                 MsgBox("Gagal membuat Kode Sesi!")
                 Return
             End If
-            Dim waktuMulai As DateTime = Now
+            waktuMulai = Now
             ''' Hitung durasi (pastikan waktuMulai juga tersimpan di memori)
             ''Dim durasiMenit As Long = DateDiff(DateInterval.Minute, waktuMulai, waktuSelesai)
             'If durasiMenit < 1 Then durasiMenit = 1
@@ -198,11 +198,15 @@ Public Class FormSesiLayanan
 
         Try
             Dim waktuSelesai As DateTime = Now
+            Dim selisih As TimeSpan = waktuSelesai - waktuMulai
+            Dim durasiString As String = String.Format("{0:00}:{1:00}:{2:00}", Math.Floor(selisih.TotalHours), selisih.Minutes, selisih.Seconds)
             ' Hitung durasi dalam menit
-            Dim durasiMenit As Long = DateDiff(DateInterval.Minute, waktuMulai, waktuSelesai)
-
+            '  Dim durasiMenit As Long = DateDiff(DateInterval.Minute, waktuMulai, waktuSelesai
             ' Jika durasi kurang dari 1 menit, anggap 1 menit
-            If durasiMenit < 1 Then durasiMenit = 1
+            '  If durasiMenit < 1 Then durasiMenit = 1
+
+            Dim durasiMenitDb As Integer = CInt(selisih.TotalMinutes)
+            If durasiMenitDb < 1 Then durasiMenitDb = 1
 
             Call connected()
 
@@ -211,14 +215,14 @@ Public Class FormSesiLayanan
 
             cmd = New MySqlCommand(sql, conn)
             cmd.Parameters.AddWithValue("@selesai", waktuSelesai.ToString("yyyy-MM-dd HH:mm:ss"))
-            cmd.Parameters.AddWithValue("@durasi", durasiMenit)
+            cmd.Parameters.AddWithValue("@durasi", durasiMenitDb)
             cmd.Parameters.AddWithValue("@catatan", tbCatatanLyn.Text)
             cmd.Parameters.AddWithValue("@kode", currentKodeSesi.Trim)
 
             Dim rowsAffected As Integer = cmd.ExecuteNonQuery()
 
             If rowsAffected > 0 Then
-                MsgBox("Sesi Layanan Selesai!" & vbCrLf & "Durasi: " & durasiMenit & " Menit", vbInformation)
+                MsgBox("Sesi Layanan Selesai!" & vbCrLf & "Durasi: " & durasiString & "(Jam:Menit:Detik)", vbInformation)
                 kondisiAwal()
                 ' Kosongkan variabel kunci setelah selesai
                 currentKodeSesi = ""
@@ -236,5 +240,15 @@ Public Class FormSesiLayanan
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
         layananprint.show()
+    End Sub
+
+    Private Sub btnKembaliLyn_Click(sender As Object, e As EventArgs) Handles btnKembaliLyn.Click
+        Me.Hide()
+        menupetugas.Show()
+    End Sub
+
+    Private Sub btnrefresh_Click(sender As Object, e As EventArgs) Handles btnrefresh.Click
+        kondisiAwal()
+        IsiDataCombo()
     End Sub
 End Class

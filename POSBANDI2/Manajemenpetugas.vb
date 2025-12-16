@@ -260,7 +260,33 @@ Public Class Manajemenpetugas
     End Sub
 
     Private Sub Button1_Click_2(sender As Object, e As EventArgs) Handles Button1.Click
+        ' 1. Validasi: Pastikan ada data yang dipilih/ditampilkan
+        If String.IsNullOrEmpty(kdptgs.Text) Then
+            MessageBox.Show("Silakan pilih petugas yang ingin dicetak terlebih dahulu.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+
+        ' 2. Buka Form Cetak
+        Dim frm As New cetakpetugas()
+
+        ' 3. Kirim Kode Petugas ke variabel Property yang kita buat di Tahap 2
+        frm.KodePetugasTerpilih = kdptgs.Text
+
+        ' 4. Tampilkan Form
+        frm.ShowDialog()
+
+
         Me.Hide()
         cetakpetugas.Show()
+    End Sub
+
+    Private Sub kdptgs_TextChanged(sender As Object, e As EventArgs) Handles kdptgs.TextChanged
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Me.Hide()
+        Dim menuketuartrw As New MenuKetuaRTRW
+        menuketuartrw.Show()
     End Sub
 End Class

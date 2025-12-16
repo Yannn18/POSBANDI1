@@ -41,7 +41,6 @@ D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.vbproj.Up2Date
 D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.exe
 D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.xml
 D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.pdb
-D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.exe.config
 D:\Program\Desktop\POSBANDI2\POSBANDI2\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 D:\Program\Desktop\POSBANDI2\POSBANDI2\bin\Debug\CrystalDecisions.ReportSource.dll
 D:\Program\Desktop\POSBANDI2\POSBANDI2\bin\Debug\CrystalDecisions.Shared.dll
@@ -60,11 +59,16 @@ D:\Program\Desktop\POSBANDI2\POSBANDI2\bin\Debug\CrystalDecisions.ReportAppServe
 D:\Program\Desktop\POSBANDI2\POSBANDI2\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 D:\Program\Desktop\POSBANDI2\POSBANDI2\bin\Debug\stdole.dll
 D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.cetakpetugas.resources
-D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.FormSesiLayanan.resources
 D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.ManajemenJadwal.resources
 D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.layananprint.resources
 D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.LandingPage.resources
 D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.MenuKetuaRTRW.resources
-D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.loginKetuaRTRW.resources
-D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.loginPetugas.resources
 D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.pilihanLogin.resources
+D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.Catatktivitas.resources
+D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.Masyarakat.resources
+D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.menupetugas.resources
+D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.menulogin.resources
+D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.regisPetugas.resources
+D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.Formlaporan.resources
+D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.fromcetaklaporan.resources
+D:\Program\Desktop\POSBANDI2\POSBANDI2\obj\Debug\POSBANDI2.exe.config
