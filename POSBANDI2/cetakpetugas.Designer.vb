@@ -28,7 +28,7 @@ Partial Class cetakpetugas
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(630, 12)
+        Me.Button1.Location = New System.Drawing.Point(310, 40)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1

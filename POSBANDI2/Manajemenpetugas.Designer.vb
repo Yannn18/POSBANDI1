@@ -240,7 +240,7 @@ Partial Class Manajemenpetugas
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(928, 628)
+        Me.Button3.Location = New System.Drawing.Point(829, 619)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(87, 25)
         Me.Button3.TabIndex = 35

@@ -41,7 +41,7 @@ Partial Class layananprint
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(618, 12)
+        Me.Button1.Location = New System.Drawing.Point(300, 35)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1
@@ -56,6 +56,7 @@ Partial Class layananprint
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Name = "layananprint"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "layananprint"
         Me.ResumeLayout(False)
 

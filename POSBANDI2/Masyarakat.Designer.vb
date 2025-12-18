@@ -220,7 +220,7 @@ Partial Class Masyarakat
         '
         'btnKembaliMU
         '
-        Me.btnKembaliMU.Location = New System.Drawing.Point(58, 600)
+        Me.btnKembaliMU.Location = New System.Drawing.Point(58, 568)
         Me.btnKembaliMU.Name = "btnKembaliMU"
         Me.btnKembaliMU.Size = New System.Drawing.Size(163, 31)
         Me.btnKembaliMU.TabIndex = 14
@@ -242,7 +242,7 @@ Partial Class Masyarakat
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(877, 693)
+        Me.ClientSize = New System.Drawing.Size(877, 611)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.btnKembaliMU)
         Me.Controls.Add(Me.tbalamat)
@@ -266,7 +266,7 @@ Partial Class Masyarakat
         Me.Controls.Add(Me.tbnik)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Name = "Masyarakat"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Masyarakat"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

@@ -214,7 +214,7 @@ Public Class Manajemenpetugas
         End If
     End Sub
 
-    Private Sub dgvpetugas_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+    Private Sub dgvpetugas_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvpetugas.CellClick
         If e.RowIndex >= 0 Then
             Dim row As DataGridViewRow = dgvpetugas.Rows(e.RowIndex)
 

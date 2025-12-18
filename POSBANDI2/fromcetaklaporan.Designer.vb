@@ -24,10 +24,8 @@ Partial Class fromcetaklaporan
     Private Sub InitializeComponent()
         Me.laporan1 = New POSBANDI2.laporan()
         Me.petugas1 = New POSBANDI2.petugas()
-
         Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
-        'Me.laporanbaru1 = New POSBANDI2.laporanbaru()
-        'Me.laporanbaru2 = New POSBANDI2.laporanbaru()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'CrystalReportViewer1
@@ -41,11 +39,21 @@ Partial Class fromcetaklaporan
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(1052, 665)
         Me.CrystalReportViewer1.TabIndex = 0
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(325, 40)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Kembali"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'fromcetaklaporan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1052, 665)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Name = "fromcetaklaporan"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -57,6 +65,7 @@ Partial Class fromcetaklaporan
     Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
     Friend WithEvents petugas1 As petugas
     Friend WithEvents laporan1 As laporan
+    Friend WithEvents Button1 As Button
     'Friend WithEvents laporanbaru1 As laporanbaru
     'Friend WithEvents laporanbaru2 As laporanbaru
 End Class

@@ -32,9 +32,10 @@ Partial Class Formlaporan
         Me.Label3 = New System.Windows.Forms.Label()
         Me.dgvhistory = New System.Windows.Forms.DataGridView()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.dgvlaporan, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvhistory, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -134,17 +135,6 @@ Partial Class Formlaporan
         Me.Panel2.Size = New System.Drawing.Size(1065, 44)
         Me.Panel2.TabIndex = 6
         '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.Highlight
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.btntampilkan)
-        Me.Panel1.Controls.Add(Me.btncetak)
-        Me.Panel1.Location = New System.Drawing.Point(-6, 576)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1065, 44)
-        Me.Panel1.TabIndex = 7
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -156,6 +146,17 @@ Partial Class Formlaporan
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Laporan"
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.SystemColors.Highlight
+        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.btntampilkan)
+        Me.Panel1.Controls.Add(Me.btncetak)
+        Me.Panel1.Location = New System.Drawing.Point(-6, 576)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1065, 44)
+        Me.Panel1.TabIndex = 7
+        '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(637, 7)
@@ -165,12 +166,22 @@ Partial Class Formlaporan
         Me.Button1.Text = "Kembali"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(25, 275)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(112, 25)
+        Me.Button2.TabIndex = 8
+        Me.Button2.Text = "Refresh"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Formlaporan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(1052, 665)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dtpselesai)
         Me.Controls.Add(Me.dgvhistory)
@@ -206,4 +217,5 @@ Partial Class Formlaporan
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label4 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class

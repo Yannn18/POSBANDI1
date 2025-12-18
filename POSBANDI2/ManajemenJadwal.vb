@@ -196,4 +196,8 @@ Public Class ManajemenJadwal
         Dim menuketuartrw As New MenuKetuaRTRW
         menuketuartrw.Show()
     End Sub
+
+    Private Sub dgvjadwal_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvjadwal.CellContentClick
+
+    End Sub
 End Class
